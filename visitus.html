@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css-stylesheets/styles.css">
+    <link rel="stylesheet" href="css-stylesheets/visitus.css">
+    <link rel="stylesheet" href="css-stylesheets/media.css">
     <script src="https://kit.fontawesome.com/cb5521ec05.js" crossorigin="anonymous"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -18,43 +20,49 @@
 <body>
     <header>
         <a href="index.html" class="logo">
-            <img src="logo/header logo.png" alt="Fredrikstad Technical Museum Logo" class="logo-img" width="370" height="105">
+            <img src="logo/header logo.png" 
+                alt="Fredrikstad Technical Museum Logo" 
+                class="logo-img"
+                width="370"
+                height="105">
         </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <nav>
             <ul class="navbar">
-                <li class="menu-item"><a href="index.html">Home</a></li>
-                <li class="menu-item"><a href="exhibitions.html">Exhibitions</a></li>
                 <li class="menu-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item dropdown">
                     <a href="exhibitions.html">Exhibitions</a>
-                    <ul class="dropdown">
+                    <ul class="dropdown-content">
                         <li><a href="#exhibition1">The Shipyard Experience</a></li>
                         <li><a href="#exhibition2">Fredrikstad - The industrial City</a></li>
                         <li><a href="#exhibition3">Build the Future</a></li>
                     </ul>
                 </li>
-                <li class="menu-item"><a href="activities.html">Activities</a></li>
-                <li class="menu-item">
-                    <a href="activities.html">Activities</a>
-                    <ul class="dropdown">
+                <li class="menu-item dropdown">
+                    <a href="familyactivities.html">Activities</a>
+                    <ul class="dropdown-content">
                         <li><a href="#activity1">Shipbuilders for a day</a></li>
                         <li><a href="#activity2">Family Shipyard Challenge</a></li>
                         <li><a href="#activity3">Treasure Hunt: Secrets of the Shipyard</a></li>
                         <li><a href="#activity4">Invent the Ship of the Future</a></li>
                     </ul>
                 </li>
-                <li class="menu-item"><a href="education.html">Education</a></li>
-                <li class="menu-item">
+                <li class="menu-item dropdown">
                     <a href="education.html">Education</a>
-                    <ul class="dropdown">
+                    <ul class="dropdown-content">
                         <li><a href="#education1">Years 1-4</a></li>
                         <li><a href="#education2">Years 5-7</a></li>
                         <li><a href="#education3">Years 8-10</a></li>
                     </ul>
                 </li>
-              <li class="menu-item"><a href="visitus.html">Visit Us</a></li>
-                <li class="menu-item">
-                    <a href="visitus.html">Visit Us</a>
-                    <ul class="dropdown">
+                <li class="menu-item dropdown">
+                    <a href="visitus.html" class="active">Visit Us</a>
+                    <ul class="dropdown-content">
                         <li><a href="#info1">Opening Hours</a></li>
                         <li><a href="#info2">Tickets</a></li>
                         <li><a href="#info3">Directions</a></li>
@@ -63,201 +71,236 @@
                     </ul>
                 </li>
                 <li class="menu-item"><a href="aboutus.html">About Us</a></li>
-                <li class="menu-item"><a href="#contact">Contact Us</a></li> 
+                <li class="menu-item"><a href="underconstruction.html">Contact Us</a></li>
+                <li class="search-item">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </li>
             </ul>
-            <i class="fa-solid fa-magnifying-glass"></i>
         </nav>
     </header>
     <main>
         <div>
             <hr style="width: 100%; height: 3px; border: none; background-color: #e37d62;">
-            <i class="fa-regular fa-clock"></i> 
-            <p>Open today 14:00-19:00 | <a href="#info1">Opening Hours</a></p>
+            <div class="infobar-main">
+            <i class="fa-regular fa-clock clock"></i> 
+            <p>Open today 14:00-19:00 | <a href="visitus.html">Opening Hours</a></p>
+        </div>
             <hr style="width: 100%; height: 3px; border: none; background-color: #e37d62;">
         </div>
-        <div class="hero-section visitus">
-            <img src="images/museum-hero.jpg" alt="Fredrikstad Technical Museum" class="hero-img" style="width: 100%; height: auto;">
-            <div class="small-hero-content">
-                <a href="#contact" class="btn">Contact Us</a>
+        <div class="small-hero-section">
+            <img src="images/museum-hero.jpg" alt="Fredrikstad Technical Museum" class="small-hero-img">
+            <a href="underconstruction.html" class="btn">Contact Us</a>
             </div>
         </div>
-        <h1>Visit Us</h1>
-        <h2>Opening Hours</h2>
-        <div class="list-container">
-            <h3>Museum</h3>
-            <div class="list-column">
-            <ul> 
-                <li>Monday</li>
-                <li>Tuesday</li>
-                <li>Wednesday</li>
-                <li>Thursday</li>
-                <li>Friday</li>
-                <li>Saturday</li>
-                <li>Sunday</li>
-            </ul>
-            </div>
-            <div class="list-column">
-             <ul>
-                <li>Closed</li>
-                <li>14:00-19:00</li>
-                <li>14:00-19:00</li>
-                <li>11:00-16:00</li>
-                <li>12:00-17:00</li>
-                <li>11:00-16:00</li>
-                <li>11:00-16:00</li>
-                <Li></Li>
-             </ul>
+        <div class="intro-section">
+            <h1>Visit Us</h1>
         </div>
-        </div>
-        <hr class="vertical-hr">
-        <div class="list-container">
-            <h3>Cafe</h3>
-            <div class="list-column">
-            <ul>
-                <li>Monday</li>
-                <li>Tuesday</li>
-                <li>Wednesday</li>
-                <li>Thursday</li>
-                <li>Friday</li>
-                <li>Saturday</li>
-                <li>Sunday</li>
-            </ul>
+        <section class="opening-hours">
+            <h2>Opening Hours</h2>
+            <div class="opening-hours-grid">
+                <div class="hours-section">
+                    <h3>Museum</h3>
+                    <div class="hours-lists">
+                        <ul>
+                            <li>Monday</li>
+                            <li>Tuesday</li>
+                            <li>Wednesday</li>
+                            <li>Thursday</li>
+                            <li>Friday</li>
+                            <li>Saturday</li>
+                            <li>Sunday</li>
+                        </ul>
+                        <ul>
+                            <li>Closed</li>
+                            <li>14:00-19:00</li>
+                            <li>14:00-19:00</li>
+                            <li>11:00-16:00</li>
+                            <li>12:00-17:00</li>
+                            <li>11:00-16:00</li>
+                            <li>11:00-16:00</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="hours-section">
+                    <h3>Cafe</h3>
+                    <div class="hours-lists">
+                        <ul>
+                            <li>Monday</li>
+                            <li>Tuesday</li>
+                            <li>Wednesday</li>
+                            <li>Thursday</li>
+                            <li>Friday</li>
+                            <li>Saturday</li>
+                            <li>Sunday</li>
+                        </ul>
+                        <ul>
+                            <li>Closed</li>
+                            <li>12:00-19:00</li>
+                            <li>12:00-19:00</li>
+                            <li>11:00-18:00</li>
+                            <li>12:00-19:00</li>
+                            <li>11:00-18:00</li>
+                            <li>11:00-17:00</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="list-column">
-             <ul>
-                <li>Closed</li>
-                <li>12:00-19:00</li>
-                <li>12:00-19:00</li>
-                <li>11:00-18:00</li>
-                <li>12:00-19:00</li>
-                <li>11:00-18:00</li>
-                <li>11:00-17:00</li>
-             </ul>
-            </div>
-        </div>
-        <p>The museum gift shop follows the museums opening hours.</p>
-        <p>Opening hours may vary throughout the year.</p>
-        <h2>Tickets</h2>
-        <div class="list-container">
-            <h3>Prices</h3>
-            <div class="list-column">
-            <ul>
-                <li>Children (0-5 years)</li>
-                <li>Children (6-15 years)</li>
-                <li>Young adults (16-20 years)</li>
-                <li>Adults</li>
-                <li>Seniors (65+ years)</li>
-            </ul>
-            </div>
-            <div class="list-column">
-             <ul>
-                <li>Free</li>
-                <li>120 kr</li>
-                <li>150 kr</li>
-                <li>190 kr</li>
-                <li>150 kr</li>
-             </ul>
-            </div>
-        </div>
-        <hr class="vertical-hr">
-        <div class="list-container">
-            <h3>Groups and Schools</h3>
-            <div class="list-column">
-            <ul>
-                <li>Adults (min. 10 people)</li>
-                <li>Students/ Seniors / Children</li>
-                <br>
-                <li>Pupils year 1-7</li>
-                <li>Pupils year 8-10</li>
-            </ul>
-            </div>
-            <div class="list-column">
-             <ul>
-                <li>150 kr per person</li>
-                <li>100 kr per person</li>
-                <br>
-                <li>20 kr per pupil</li>
-                <li>25 kr per pupil</li>
-             </ul>
-            </div>
-        </div>
-        <a href="#order ticket" class="btn">Buy Tickets</a>
+            <p>The museum gift shop follows the museum´s opening hours.</p>
+            <p>Opening hours may vary throughout the year.</p>
+        </section>
+        <section class="opening-hours">
+            <h2>Tickets</h2>
+                <div class="opening-hours-grid">
+                    <div class="hours-section">
+                        <h3>Prices</h3>
+                        <div class="hours-lists">
+                            <ul>
+                                <li>Children (0-5 years)</li>
+                                <li>Children (6-15 years)</li>
+                                <li>Young adults (16-20 years)</li>
+                                <li>Adults</li>
+                                <li>Seniors (65+ years)</li>
+                            </ul>
+                            <ul>
+                                <li>Free</li>
+                                <li>120 kr</li>
+                                <li>150 kr</li>
+                                <li>190 kr</li>
+                                <li>150 kr</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div class="hours-section">
+                        <h3>Groups and Schools</h3>
+                        <div class="hours-lists">
+                            <ul>
+                                <li>Adults (min. 10 people)</li>
+                                <li>Students/ Seniors / Children</li>
+                                <li class="list-gap">Pupils year 1-7</li>  
+                                <li>Pupils year 8-10</li>
+                            </ul>
+                            <ul>
+                                <li>150 kr per person</li>
+                                <li>100 kr per person</li>
+                                <li class="list-gap">20 kr per pupil</li>
+                                <li>25 kr per pupil</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p>Tickets can be purchased at the museum or online.</p>
+                <p>Students get a 20% discount if they can show a valid student ID.</p>
+        </section>
+        <a href="underconstruction.html" class="btn-small">Buy Tickets</a>
         <div class="location-container">
-            <h3>Where are we located</h3>
-            <p>The museum is located on the same location as the old<br> 
-                shipyard for Fredrikstad Mekaniske Verksted in Fredrikstad.</p>
-            <p>Address: Dokka 1, 1601 Fredrikstad</p>
-            <p>Click on the map to get your exact directions</p>
-            <p>There are different options for public transportation,<br> 
-                the easiest being the bus that passes several times every hour.<br> 
-                Click here for timetables and information.</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1366.1454287869099!2d10.924780691500224!3d59.21298059311198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46440346f667c141%3A0x1f0145ec3ffde1ea!2zRG9ra2EgMSwgMTY3MSBLcsOla2Vyw7h5!5e0!3m2!1sno!2sno!4v1786992529548!5m2!1sno!2sno" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </div>
-        <h2>Parking</h2>
-        <p>We can offer a large car park with 4 hour free parking for our visitors.<br> 
-            The car park also has its own designated places for busses.</p>
-        <p>The car park is located right next to the museum itself making it easily accessible.</p>
-        <p>There are several places close to the entrance for accessible parking for those with a parking permit.</p>
-        <p>Click here to see a map over our car park and how to access it.</p>
-        <h2>Facilities</h2>
-        <p>We want every visitor to enjoy a comfortable and welcoming museum experience.</p>
-        <p>The museum is designed to be accessible for families with young children, wheelchair users,<br> 
-            and visitors with a wide range of accessibility needs.</p>
-        <p>Step-free access, lifts, accessible toilets, baby changing facilities,<br> 
-            and family-friendly spaces help ensure that everyone can explore the exhibitions with ease.</p>
-        <p>We also have a cozy cafe and our own shop placed within the museum.</p>
-        <div class="facilities-container">
-            <div>
-                <h3>Cafe</h3>
-                <p>Visit our cozy cafe with a range of coffee,<br>
-                    tea and baked goods. Many options for<br> 
-                    both the grown-ups and the kids.</p>
-                <a href="#menu" class="btn">Menu</a>
-                <img src="images/cafe.jpg" alt="A picture of the cafe at Fredrikstad Technical Museum">
+            <div class="container-right-column-one">
+                <h3>Where are we located</h3>
+                <p>The museum is located on the same location as the old
+                    shipyard for Fredrikstad Mekaniske Verksted in Fredrikstad.</p>
+                <p>Address: Dokka 1, 1601 Fredrikstad</p>
+                <p>Click on the map to get your exact directions</p>
+                <p>There are different options for public transportation,<br> 
+                    the easiest being the bus that passes several times every hour.
+                    Click here for timetables and information.</p>
             </div>
-            <div>
+            <div class="container-right-column-two">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1366.1454287869099!2d10.924780691500224!3d59.21298059311198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46440346f667c141%3A0x1f0145ec3ffde1ea!2zRG9ra2EgMSwgMTY3MSBLcsOla2Vyw7h5!5e0!3m2!1sno!2sno!4v1786992529548!5m2!1sno!2sno" 
+                width="400" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+        </div>
+        <div class="visitus-info">
+            <h2>Parking</h2>
+            <p>We can offer a large car park with 4 hour free parking for our visitors.
+                The car park also has its own designated places for busses.</p>
+            <p>The car park is located right next to the museum itself making it easily accessible.</p>
+            <p>There are several places close to the entrance for accessible parking for those with a parking permit.</p>
+            <p>Click here to see a map over our car park and how to access it.</p>
+            <h2>Facilities</h2>
+            <p>We want every visitor to enjoy a comfortable and welcoming museum experience.</p>
+            <p>The museum is designed to be accessible for families with young children, wheelchair users, 
+                and visitors with a wide range of accessibility needs.</p>
+            <p>Step-free access, lifts, accessible toilets, baby changing facilities, 
+                and family-friendly spaces help ensure that everyone can explore the exhibitions with ease.</p>
+            <p>We also have a cozy cafe and our own shop placed within the museum.</p>
+        </div>
+        <div class="facilities-container">
+            <div class="container-right-column-one">
+                <h3>Cafe</h3>
+                <p>Visit our cozy cafe with a range of coffee,
+                    tea and baked goods. Many options for
+                    both the grown-ups and the kids.</p>
+                <a href="underconstruction.html" class="btn-small">Menu</a>
+            </div>
+            <div class="container-right-column-two">
+                <img src="images/cafe.jpg" alt="A picture of the cafe at Fredrikstad Technical Museum" class="container-img">
+            </div>
+        </div>
+        <div class="facilities-container">
+            <div class="container-right-column-one">
                 <h3>Gift Shop</h3>
-                <p>In our Gift Shop you can find a gift,<br> 
-                    a memory to bring with you or choose from<br> 
+                <p>In our Gift Shop you can find a gift,
+                    a memory to bring with you or choose from
                     our many miniature industrial models. </p>
-                <a href="#shop" class="btn">Assortment</a>
-                <img src="images/store.jpg" alt="A picture of one of the shipmodels you can buy at the gift shop at Fredrikstad Technical Museum">
+                <a href="underconstruction.html" class="btn-small">Assortment</a>
+            </div>
+            <div class="container-right-column-two">
+                <img src="images/store.jpg" alt="A picture of one of the shipmodels you can buy at the gift shop at Fredrikstad Technical Museum" class="container-img">
             </div>
         </div>
     </main>
     <footer>
-        <h2>Fredrikstad Technical Museum</h2>
-        <a href="#info1">Our Opening Hours</a>
-        <div class="footer-adress">
-            <p>Dokka 1</p>
-            <p>Fredrikstad</p>
-            <p>Org.nr: 123 456 789</p>
-            <br>
-            <p>Phone: +47 123 45 678</p>
-        </div>
-        <div class="footer-socials">
+        <div class="footer-column-left">
+            <h2>Fredrikstad Technical Museum</h2>
+            <div class="footer-address">
+                <ul>
+                <li>Opening Hours</li>
+                <br>
+                <li>Dokka 1</li>
+                <li>Fredrikstad</li>
+                <li>Org.nr: 123 456 789</li>
+                <li>Phone: +47 123 45 678</li>
+                </ul>
+            </div>
+            <div class="footer-socials">
             <p>Follow us on social media</p>
-            <span style="font-size: 40px;">
+            <span class="social-icons" style="font-size: 40px;">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-youtube"></i>
             <i class="fa-regular fa-envelope"></i>
             </span>
+            </div>
         </div>
-        <div>
-            <p><span style="text-decoration: underline; ">The Museum</span></p>
-            <br>
-            <li>
-                <p>Contact Us</p>
-                <p>Directions</p>
-                <p>Facilities</p>
-                <p>Press</p>
-                <p>Vacancies</p>
-                <p>About Us</p>
-            </li>
+        <div class="footer-links">
+            <p class="footer-heading">The Museum</p>
+            <ul>
+                <li>Contact Us</li>
+                <li>Directions</li>
+                <li>Facilities</li>
+                <li>Press</li>
+                <li>Vacancies</li>
+                <li>About Us</li>
+            </ul>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1366.1454287869099!2d10.924780691500224!3d59.21298059311198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46440346f667c141%3A0x1f0145ec3ffde1ea!2zRG9ra2EgMSwgMTY3MSBLcsOla2Vyw7h5!5e0!3m2!1sno!2sno!4v1786992529548!5m2!1sno!2sno" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        <p>&copy; 2026 Fredrikstad Technical Museum. All rights reserved.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1366.1454287869099!2d10.924780691500224!3d59.21298059311198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46440346f667c141%3A0x1f0145ec3ffde1ea!2zRG9ra2EgMSwgMTY3MSBLcsOla2Vyw7h5!5e0!3m2!1sno!2sno!4v1786992529548!5m2!1sno!2sno" 
+            width="400" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+        <p class="copyright">
+            &copy; 2026 Fredrikstad Technical Museum. All rights reserved.
+        </p>
     </footer>
 </body>
 </html>

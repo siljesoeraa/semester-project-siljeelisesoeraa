@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css-stylesheets/styles.css">
+    <link rel="stylesheet" href="css-stylesheets/exhibitions.css">
+    <link rel="stylesheet" href="css-stylesheets/media.css">
     <script src="https://kit.fontawesome.com/cb5521ec05.js" crossorigin="anonymous"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -18,43 +20,49 @@
 <body>
     <header>
         <a href="index.html" class="logo">
-            <img src="logo/header logo.png" alt="Fredrikstad Technical Museum Logo" class="logo-img" width="370" height="105">
+            <img src="logo/header logo.png" 
+                alt="Fredrikstad Technical Museum Logo" 
+                class="logo-img"
+                width="370"
+                height="105">
         </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <nav>
             <ul class="navbar">
-                <li class="menu-item"><a href="index.html">Home</a></li>
-                <li class="menu-item"><a href="exhibitions.html">Exhibitions</a></li>
                 <li class="menu-item">
-                    <a href="exhibitions.html">Exhibitions</a>
-                    <ul class="dropdown">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="exhibitions.html" class="active">Exhibitions</a>
+                    <ul class="dropdown-content">
                         <li><a href="#exhibition1">The Shipyard Experience</a></li>
                         <li><a href="#exhibition2">Fredrikstad - The industrial City</a></li>
                         <li><a href="#exhibition3">Build the Future</a></li>
                     </ul>
                 </li>
-                <li class="menu-item"><a href="activities.html">Activities</a></li>
-                <li class="menu-item">
-                    <a href="activities.html">Activities</a>
-                    <ul class="dropdown">
+                <li class="menu-item dropdown">
+                    <a href="familyactivities.html">Activities</a>
+                    <ul class="dropdown-content">
                         <li><a href="#activity1">Shipbuilders for a day</a></li>
                         <li><a href="#activity2">Family Shipyard Challenge</a></li>
                         <li><a href="#activity3">Treasure Hunt: Secrets of the Shipyard</a></li>
                         <li><a href="#activity4">Invent the Ship of the Future</a></li>
                     </ul>
                 </li>
-                <li class="menu-item"><a href="education.html">Education</a></li>
-                <li class="menu-item">
+                <li class="menu-item dropdown">
                     <a href="education.html">Education</a>
-                    <ul class="dropdown">
+                    <ul class="dropdown-content">
                         <li><a href="#education1">Years 1-4</a></li>
                         <li><a href="#education2">Years 5-7</a></li>
                         <li><a href="#education3">Years 8-10</a></li>
                     </ul>
                 </li>
-                <li class="menu-item"><a href="visitus.html">Visit Us</a></li>
-                <li class="menu-item">
+                <li class="menu-item dropdown">
                     <a href="visitus.html">Visit Us</a>
-                    <ul class="dropdown">
+                    <ul class="dropdown-content">
                         <li><a href="#info1">Opening Hours</a></li>
                         <li><a href="#info2">Tickets</a></li>
                         <li><a href="#info3">Directions</a></li>
@@ -63,84 +71,113 @@
                     </ul>
                 </li>
                 <li class="menu-item"><a href="aboutus.html">About Us</a></li>
-                <li class="menu-item"><a href="#contact">Contact Us</a></li> 
+                <li class="menu-item"><a href="underconstruction.html">Contact Us</a></li>
+                <li class="search-item">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </li>
             </ul>
-            <i class="fa-solid fa-magnifying-glass"></i>
         </nav>
     </header>
     <main>
         <div>
             <hr style="width: 100%; height: 3px; border: none; background-color: #e37d62;">
-            <i class="fa-regular fa-clock"></i> 
-            <p>Open today 14:00-19:00 | <a href="#info1">Opening Hours</a></p>
+            <div class="infobar-main">
+            <i class="fa-regular fa-clock clock"></i> 
+            <p>Open today 14:00-19:00 | <a href="visitus.html">Opening Hours</a></p>
+        </div>
             <hr style="width: 100%; height: 3px; border: none; background-color: #e37d62;">
         </div>
-        <div class="hero-section exhibition">
-            <img src="images/exhibition-hero.jpg" alt="Exhibition Hero Image" class="small-hero-img" width="100%" height="auto">
-            <div class="small-hero-content">
-                <a href="#order ticket" class="btn">Buy Tickets</a>
+        <div class="small-hero-section">
+            <img src="images/exhibition-hero.jpg" alt="Exhibition Hero Image" class="small-hero-img">
+            <a href="underconstruction.html" class="btn">Buy Tickets</a>
+        </div>
+        <div class="intro-section">
+            <h1>Exhibitions</h1>
+            <p>Explore three interactive exhibitions that bring Fredrikstad's industrial heritage to life. From the bustling shipyards of Fredrikstad Mekaniske Verksted 
+            to the people who helped shape the city, and the innovations driving tomorrow's maritime industries, each exhibition offers hands-on experiences for visitors of all ages.
+            Discover the story of Fredrikstad through engineering, history, science, and creativity.</p>
+        </div>
+        <div class="container-right-exhibition">
+            <div class="container-right-column-one">
+                <h3>The Shipyard Experience</h3>
+                <p>Step into the world of shipbuilding and discover how ships were designed, built, and launched. 
+                Through interactive activities and hands-on challenges, experience the teamwork,
+                craftsmanship, and engineering that made Fredrikstad Mekaniske Verksted an important part of the city's history.</p>
+                </div>
+                <div class="container-right-column-two">
+                <img src="images/propell.jpg" alt="One of the large propellars from one of the ships built in the shipyard of Fredrikstad mekaniske verskted" class="container-img">
             </div>
         </div>
-        <h1>Exhibitions</h1>
-        <p>Explore three interactive exhibitions that bring Fredrikstad's industrial heritage to life. From the bustling shipyards of Fredrikstad Mekaniske Verksted<br> 
-            to the people who helped shape the city, and the innovations driving tomorrow's maritime industries, each exhibition offers hands-on experiences for visitors of all ages.<br>
-            Discover the story of Fredrikstad through engineering, history, science, and creativity.</p>
-        <div class="exhibition-container-r">
-            <h3>The Shipyard Experience</h3>
-            <p>Step into the world of shipbuilding and discover how ships were designed, built, and launched.<br> 
-                Through interactive activities and hands-on challenges, experience the teamwork,<br> 
-                craftsmanship, and engineering that made Fredrikstad Mekaniske Verksted an important part of the city's history.</p>
-                <img src="images/propell.jpg" alt="One of the large propellars from one of the ships built in the shipyard of Fredrikstad mekaniske verskted">
+        <div class="container-left-exhibition">
+            <div class="container-left-column-one">
+                <img src="images/industrial-city.jpg" alt="A picture of one of the old steam engines used in the shipyard" class="container-img">
+            </div>
+            <div class="container-left-column-two">
+                <h3>Fredrikstad - The Industrial City</h3>
+                <p>Discover how industry transformed Fredrikstad into a thriving industrial community.
+                    Explore the stories of the people, workplaces, and innovations that shaped everyday life,
+                    and learn how the city's rich industrial heritage continues to influence Fredrikstad today.
+                </p>
+            </div>
         </div>
-        <div class="exhibition-container-l">
-            <img src="images/industrial-city.jpg" alt="A picture of one of the old steam engines used in the shipyard">
-            <h3>Fredrikstad - The Industrial City</h3>
-            <p>Discover how industry transformed Fredrikstad into a thriving industrial community.<br>
-                Explore the stories of the people, workplaces, and innovations that shaped everyday life,<br>
-                and learn how the city's rich industrial heritage continues to influence Fredrikstad today.</p>
-        </div>
-        <div class="exhibition-container-r">
-            <h3>Build the Future</h3>
-            <p>Innovation never stops. This exhibition invites visitors to become engineers,<br>
-                inventors, and problem-solvers as they explore robotics, sustainable technology,<br>
-                renewable energy, and the future of maritime engineering. Design, build, experiment,<br> 
+        <div class="container-right-exhibition">
+            <div class="container-right-column-one">
+                <h3>Build the Future</h3>
+                <p>Innovation never stops. This exhibition invites visitors to become engineers,
+                inventors, and problem-solvers as they explore robotics, sustainable technology,
+                renewable energy, and the future of maritime engineering. Design, build, experiment, 
                 and imagine the next generation of solutions.</p>
-            <img src="images/build-the-future.jpg" alt="The model of a new modern ship where you can see the construction on the inside">
+            </div>
+            <div class="container-right-column-two">
+                <img src="images/build-the-future.jpg" alt="The model of a new modern ship where you can see the construction on the inside" class="container-img">
+            </div>
         </div>
     </main>
-     <footer>
-        <h2>Fredrikstad Technical Museum</h2>
-        <a href="#info1">Our Opening Hours</a>
-        <div class="footer-adress">
-            <p>Dokka 1</p>
-            <p>Fredrikstad</p>
-            <p>Org.nr: 123 456 789</p>
-            <br>
-            <p>Phone: +47 123 45 678</p>
-        </div>
-        <div class="footer-socials">
+    <footer>
+        <div class="footer-column-left">
+            <h2>Fredrikstad Technical Museum</h2>
+            <div class="footer-address">
+                <ul>
+                <li>Opening Hours</li>
+                <br>
+                <li>Dokka 1</li>
+                <li>Fredrikstad</li>
+                <li>Org.nr: 123 456 789</li>
+                <li>Phone: +47 123 45 678</li>
+                </ul>
+            </div>
+            <div class="footer-socials">
             <p>Follow us on social media</p>
-            <span style="font-size: 40px;">
+            <span class="social-icons" style="font-size: 40px;">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-youtube"></i>
             <i class="fa-regular fa-envelope"></i>
             </span>
+            </div>
         </div>
-        <div>
-            <p><span style="text-decoration: underline; ">The Museum</span></p>
-            <br>
-            <li>
-                <p>Contact Us</p>
-                <p>Directions</p>
-                <p>Facilities</p>
-                <p>Press</p>
-                <p>Vacancies</p>
-                <p>About Us</p>
-            </li>
+        <div class="footer-links">
+            <p class="footer-heading">The Museum</p>
+            <ul>
+                <li>Contact Us</li>
+                <li>Directions</li>
+                <li>Facilities</li>
+                <li>Press</li>
+                <li>Vacancies</li>
+                <li>About Us</li>
+            </ul>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1366.1454287869099!2d10.924780691500224!3d59.21298059311198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46440346f667c141%3A0x1f0145ec3ffde1ea!2zRG9ra2EgMSwgMTY3MSBLcsOla2Vyw7h5!5e0!3m2!1sno!2sno!4v1786992529548!5m2!1sno!2sno" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        <p>&copy; 2026 Fredrikstad Technical Museum. All rights reserved.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1366.1454287869099!2d10.924780691500224!3d59.21298059311198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46440346f667c141%3A0x1f0145ec3ffde1ea!2zRG9ra2EgMSwgMTY3MSBLcsOla2Vyw7h5!5e0!3m2!1sno!2sno!4v1786992529548!5m2!1sno!2sno" 
+            width="400" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+        <p class="copyright">
+            &copy; 2026 Fredrikstad Technical Museum. All rights reserved.
+        </p>
     </footer>
 </body>
 </html>

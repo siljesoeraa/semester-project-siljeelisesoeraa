@@ -1,0 +1,9 @@
+.education-container-r, 
+.education-container-l {
+    background-color: #599DB0;
+    border-radius: 25px;
+}
+
+.list-gap {
+    margin-top: 20px;
+}

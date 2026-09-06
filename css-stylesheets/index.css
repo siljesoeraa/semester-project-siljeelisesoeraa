@@ -1,0 +1,125 @@
+.home-containers {
+    display: grid; 
+    max-width: 1200px;
+    grid-template-columns: 1fr;
+    gap: 30px; 
+    width: 90%; 
+    margin: 30px auto; 
+}
+
+.exhibition-container,
+.activity-container,
+.education-container {
+    width: 100%;
+    max-width: none; 
+    margin: 0;
+    padding: 30px;
+    border-radius: 25px;
+    filter:drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3)); 
+    box-sizing: border-box;
+}
+
+.exhibition-container,
+.visit-us-container {
+    background-color: #FFD65A;
+}
+
+.activity-container {
+    background-color: #E37D62;
+}
+
+.education-container {
+    background-color: #599DB0;
+}
+
+.exhibition-container h3, 
+.activity-container h3, 
+.education-container h3{
+    min-height: 30px; 
+    margin: 20px 0 10px;
+    padding: 0;
+}
+
+.exhibition-image, 
+.activity-image, 
+.education-image, 
+.info-image {
+    width: 100%; 
+    min-height: 192px; 
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.education-container p, 
+.exhibition-container p, 
+.activity-container p {
+    margin: 0; 
+    padding: 0; 
+    line-height: 1.5;
+}
+
+.visit-us-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto; 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; 
+    padding: 30px; 
+    box-sizing: border-box;
+    text-align: left; 
+    line-height: 1.4; 
+    border-radius: 25px;
+    filter:drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3)); 
+}
+
+/* Media Queries */ 
+@media (min-width: 796px) and (max-width:1024px) {
+
+}
+
+@media (min-width: 1025px) {
+.home-containers,
+.visit-us-container {
+    width: 80%; 
+    max-width: 1200px;
+    margin: 30px auto; 
+    box-sizing: border-box;
+}
+   
+.home-containers {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.exhibition-container,
+.activity-container,
+.education-container{
+    flex: 1;  
+    max-width: 400px;
+    min-height: 500px;
+    display: grid; 
+    grid-template-rows: 192px auto 1fr;
+    padding: 30px; 
+    border-radius: 25px;
+    filter:drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3)); 
+    box-sizing: border-box;
+}
+
+.visit-us-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 40px auto;
+    padding: 30px;
+    gap: 25px;
+    width: 80%;
+    max-width: 1200px;
+    line-height: 1.4;
+    border-radius: 25px;
+}
+}
