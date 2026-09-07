@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Family Activities | Fredrikstad Technical Museum </title>
-    <meta name="description" content="Explore Fredrikstad's industrial heritage through interactive exhibitions, hands-on science, engineering and family activities for curious minds of all ages.">
+    <meta name="description" content="Explore family activities for children ages 7–15 at Fredrikstad's science museum, including shipbuilding, treasure hunts, engineering and innovation.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -20,17 +20,13 @@
 <body>
      <header>
         <a href="index.html" class="logo">
-            <img src="logo/header logo.png" 
-                alt="Fredrikstad Technical Museum Logo" 
-                class="logo-img"
-                width="370"
-                height="105">
+            <img src="logo/header-logo.png" alt="Fredrikstad Technical Museum homepage" class="logo-img" width="370" height="105">
         </a>
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-icon">
             <i class="fa-solid fa-bars"></i>
         </label>
-        <nav>
+       <nav>
             <ul class="navbar">
                 <li class="menu-item">
                     <a href="index.html">Home</a>
@@ -38,36 +34,36 @@
                 <li class="menu-item dropdown">
                     <a href="exhibitions.html">Exhibitions</a>
                     <ul class="dropdown-content">
-                        <li><a href="#exhibition1">The Shipyard Experience</a></li>
-                        <li><a href="#exhibition2">Fredrikstad - The industrial City</a></li>
-                        <li><a href="#exhibition3">Build the Future</a></li>
+                        <li><a href="exhibitions.html#exhibition1">The Shipyard Experience</a></li>
+                        <li><a href="exhibitions.html#exhibition2">Fredrikstad - The industrial City</a></li>
+                        <li><a href="exhibitions.html#exhibition3">Build the Future</a></li>
                     </ul>
                 </li>
                 <li class="menu-item dropdown">
-                    <a href="familyactivities.html" class="active">Activities</a>
+                    <a href="familyactivities.html">Family Activities</a>
                     <ul class="dropdown-content">
-                        <li><a href="#activity1">Shipbuilders for a day</a></li>
-                        <li><a href="#activity2">Family Shipyard Challenge</a></li>
-                        <li><a href="#activity3">Treasure Hunt: Secrets of the Shipyard</a></li>
-                        <li><a href="#activity4">Invent the Ship of the Future</a></li>
+                        <li><a href="familyactivities.html#activities1">Shipbuilders for a day</a></li>
+                        <li><a href="familyactivities.html#activities2">Family Shipyard Challenge</a></li>
+                        <li><a href="familyactivities.html#activities3">Treasure Hunt: Secrets of the Shipyard</a></li>
+                        <li><a href="familyactivities.html#activities4">Invent the Ship of the Future</a></li>
                     </ul>
                 </li>
                 <li class="menu-item dropdown">
                     <a href="education.html">Education</a>
                     <ul class="dropdown-content">
-                        <li><a href="#education1">Years 1-4</a></li>
-                        <li><a href="#education2">Years 5-7</a></li>
-                        <li><a href="#education3">Years 8-10</a></li>
+                        <li><a href="education.html#education1">Years 1-4</a></li>
+                        <li><a href="education.html#education2">Years 5-7</a></li>
+                        <li><a href="education.html#education3">Years 8-10</a></li>
                     </ul>
                 </li>
                 <li class="menu-item dropdown">
                     <a href="visitus.html">Visit Us</a>
                     <ul class="dropdown-content">
-                        <li><a href="#info1">Opening Hours</a></li>
-                        <li><a href="#info2">Tickets</a></li>
-                        <li><a href="#info3">Directions</a></li>
-                        <li><a href="#info4">Parking</a></li>
-                        <li><a href="#info5">Facilities</a></li>
+                        <li><a href="visitus.html#info1">Opening Hours</a></li>
+                        <li><a href="visitus.html#info2">Tickets</a></li>
+                        <li><a href="visitus.html#info3">Directions</a></li>
+                        <li><a href="visitus.html#info4">Parking</a></li>
+                        <li><a href="visitus.html#info5">Facilities</a></li>
                     </ul>
                 </li>
                 <li class="menu-item"><a href="aboutus.html">About Us</a></li>
@@ -88,7 +84,7 @@
             <hr style="width: 100%; height: 3px; border: none; background-color: #e37d62;">
         </div>
         <div class="small-hero-section">
-            <img src="images/activities - hero.jpg" alt="Family Activities Hero Image" class="small-hero-img">
+            <img src="images/activities-hero.jpg" alt="A young boy looking at one of the display models" class="small-hero-img">
             <a href="underconstruction.html" class="btn">Buy Tickets</a>
         </div>
         <div class="intro-section">
@@ -99,9 +95,9 @@
             or imagining the ships of tomorrow, there's something for every young explorer and their family.
             Learn through play, discover how great ideas become reality, and make lasting memories together at the museum.</p>
         </div>
-        <div class="activities-container-r">
+        <div class="activities-container-r" id="activities1">
             <div class="container-right-column-one">
-                <h3>Shipbuilders for a day</h3>
+                <h2>Shipbuilders for a day</h2>
                 <p>Families become shipbuilding teams for a day.<br>
                     Recommended ages: 4-12 years <br>
                     Duration: 45 minutes<br>
@@ -112,21 +108,21 @@
                 <img src="images/shipbuilders.jpg" alt="A family working together building" class="container-img">
             </div>
         </div>
-        <div class="activities-container-l">
+        <div class="activities-container-l" id="activities2">
             <div class="container-left-column-one">
                 <img src="images/shipyard-challenge.jpg" alt="One of the distinct cranes from the shipyard" class="container-img">
             </div>
             <div class="container-left-column-two">
-                <h3>Family Shipyard Challenge</h3>
+                <h2>Family Shipyard Challenge</h2>
                 <p>Families recieve a mission inspired by real work at Fredrikstad Mekaniske Verksted.<br>
                     Recommended ages: 6-14 years<br> 
                     Duration: 60 minutes<br>
                     Each completes station earns a stamp in your Shipyard Passport!</p> 
             </div>
         </div>
-        <div class="activities-container-r">
+        <div class="activities-container-r" id="activities3">
             <div class="container-right-column-one">
-                <h3>Treasure Hunt: Secrets of the Shipyard</h3>
+                <h2>Treasure Hunt: Secrets of the Shipyard</h2>
                 <p>An interactive museum-wide scavenger hunt where families solve clues based on the museums exhibitions.<br> 
                     Recommended ages: 5-12 years<br> 
                     Duration: 45-75 minutes<br> 
@@ -136,12 +132,12 @@
                 <img src="images/treasure-hunt.jpg" alt="A young boy studiyng a trassure map" class="container-img">
             </div>
         </div>
-        <div class="activities-container-l">
+        <div class="activities-container-l" id="activities4">
             <div class="container-left-column-one">
                 <img src="images/students-lego.jpg" alt="Three children working together building the ship of the future using LEGO" class="container-img">
             </div>
             <div class="container-left-column-two">
-                <h3>Invent the Ship of the Future</h3>
+                <h2>Invent the Ship of the Future</h2>
                 <p>Inspired by FMVs inovative ship designs, families work together to imagine 
                     the next generation of ships using LEGO.<br> 
                     Recommended ages: 7-15 years<br>
@@ -155,8 +151,7 @@
             <div class="footer-address">
                 <ul>
                 <li>Opening Hours</li>
-                <br>
-                <li>Dokka 1</li>
+                <li class="list-gap">Dokka 1</li>
                 <li>Fredrikstad</li>
                 <li>Org.nr: 123 456 789</li>
                 <li>Phone: +47 123 45 678</li>
@@ -189,7 +184,8 @@
             style="border:0;" 
             allowfullscreen="" 
             loading="lazy" 
-            referrerpolicy="strict-origin-when-cross-origin">
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="Interactive map showing the directions to Fredrikstad Technical Museum">
         </iframe>
         <p class="copyright">
             &copy; 2026 Fredrikstad Technical Museum. All rights reserved.

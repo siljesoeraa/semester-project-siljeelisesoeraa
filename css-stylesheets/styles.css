@@ -8,7 +8,7 @@
  h1, h2, h3, a, a.btn, ul.navbar {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300-700;
+  font-weight: 300 700;
   font-style: normal;
   color: #111;
 }
@@ -16,7 +16,7 @@
 p, ul.dropdown, ul, li {
     font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100-900;
+  font-weight: 100 900;
   font-style: normal;
   color: #111;
 }
@@ -196,7 +196,7 @@ nav {
     margin: 0;
 }
 
-.sclock {
+.clock {
     color: #E37D62;
 }
 
@@ -317,8 +317,8 @@ p + p {
     width: 10px; 
 }
 
-.container-right-column-one h3, 
-.container-left-column-two h3 {
+.container-right-column-one h2, 
+.container-left-column-two h2 {
     margin: 0 0 25px; 
     padding: 0; 
     line-height: 1.4;

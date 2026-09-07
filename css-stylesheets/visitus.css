@@ -38,7 +38,7 @@
     line-height: 1.5;
 }
 
-.hours-section:second-child {
+.hours-section:nth-child(2) {
     padding-left: 0;
 }
 
@@ -126,7 +126,7 @@
     line-height: 1.5;
 }
 
-.hours-section:second-child(2) {
+.hours-section:nth-child(2) {
     padding-left: 0;
 }
 
