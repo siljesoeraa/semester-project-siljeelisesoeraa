@@ -6,19 +6,19 @@
 
 /* Fonts */
  h1, h2, h3, a, a.btn, ul.navbar {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-optical-sizing: auto;
   font-weight: 300 700;
   font-style: normal;
-  color: #111;
+  color: #000;
 }
 
 p, ul.dropdown, ul, li {
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-optical-sizing: auto;
   font-weight: 100 900;
   font-style: normal;
-  color: #111;
+  color: #000;
 }
 
 header, 
@@ -53,7 +53,7 @@ h1 {
     align-items: center;
     justify-content: center;
     background-color: #e37d62;
-    color:#111; 
+    color:#000; 
     text-decoration: none; 
     font-size: 0.9rem;
     font-weight: 500;
@@ -109,7 +109,7 @@ header {
     transform: translateY(-50%);
     cursor: pointer;
     font-size: 2rem;
-    color: #111;
+    color: #000;
 }
 
 /* Navigation */
@@ -220,7 +220,7 @@ nav {
     align-items: center;
     justify-content: center;
     background-color: #e37d62;
-    color:#111; 
+    color:#000; 
     text-decoration: none; 
     font-size: clamp(1.2rem, 2.5vw, 2rem);
     font-weight: 600;
@@ -251,7 +251,7 @@ nav {
     align-items: center;
     justify-content: center;
     background-color: #e37d62;
-    color:#111; 
+    color:#000; 
     text-decoration: none; 
     font-size: 1.2rem;
     font-weight: 600;
@@ -301,6 +301,7 @@ p + p {
     gap: 20px; 
     padding: 20px; 
     border-radius: 25px;
+    filter:drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3)); 
 }
 
 .container-right-column-one, 

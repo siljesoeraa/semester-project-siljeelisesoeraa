@@ -5,7 +5,7 @@ Semester project in Front End Development
 
 This project is a completed semester project and represents a static website concept. It is not an active webiste for a real museum. 
 
-# Fredrikstad Technical Museum 
+# Fredrikstad Science Museum 
 
 ## About the project 
 
@@ -78,11 +78,11 @@ Some links and features are therefore included as part of the website concept an
 
 ## Credits 
 
-- HTML and CSS: written by me 
+- HTML and CSS: written by me with assist of OpenAI 
 - Icons: Font awesome 
 - Fonts: Google Fonts 
 - Logos: Created by me using ChatGPT
-- Written content on pages: All written content is created by me using AI 
+- Placeholder-text: Created using ChatGPT 
 - Images: 
     - Crane hero picture home page: https://www.pexels.com/nb-no/bilde/sjo-svart-hvitt-havn-portvin-18366928/
     - Exhibitions hero picture: https://www.pexels.com/nb-no/bilde/by-landemerke-reise-tyskland-17835923/
@@ -106,6 +106,17 @@ Some links and features are therefore included as part of the website concept an
     - Archives and research library: https://www.pexels.com/nb-no/bilde/trapper-mennesker-lys-boker-6334419/
     - Under construction: https://www.pexels.com/nb-no/bilde/svart-hvitt-himmel-trane-kran-15477406/
 
+## Use of AI
+
+For this project I have used ChatGPT - OpenAI as a sparring partner. All code is written, structured and placed by me. 
+
+I have used AI for the following tasks: 
+- **Brainstorming and ideas:** Developing concepts, colour palettes, branding and layout in an early face. 
+- **Creating logos:** Logos seen on this fictive site are all created by me using ChatGPT
+- **Placeholder-text:** Generating realistic text and concepts, alternative to the Lorem Impsum placeholder, for the website. Using ChatGPT i generated suggestions and placeholders for exhibitions, activities and educational programmes. 
+- **Troubleshooting:** Help finding faults in the HTML-structure or CSS-styling when the code did not behave as expected. 
+
+Decleration: No code has been written or generated as a whole by AI. AI has exclusively been used to streamline my own learning and developmental process. 
 
 ## Author 
 
